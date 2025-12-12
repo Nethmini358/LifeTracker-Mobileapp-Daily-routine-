@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/tv_bar_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:textSize="10sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="4dp" />
+
+    <View
+        android:id="@+id/bar_view"
+        android:layout_width="14dp"
+        android:layout_height="20dp"
+        android:background="@drawable/progress_bar_fill"
+        android:layout_gravity="bottom" />
+
+    <TextView
+        android:id="@+id/tv_day_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m"
+        android:textSize="10sp"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/primary_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:gravity="center_vertical">
+
+        <!-- Mood Emoji -->
+        <TextView
+            android:id="@+id/tvMoodEmoji"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/_fd"
+            android:textSize="24sp"
+            android:background="@drawable/mood_emoji_background"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Mood Details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMoodType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_1happy"
+                android:textSize="16sp"
+                android:textColor="#1A1A1A"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvMoodDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/today_2_30_pm"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvMoodNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/feeling_great_after_a_productive_day"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+        </LinearLayout>
+
+        <!-- Share Button -->
+        <ImageButton
+            android:id="@+id/btnShareMood"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_share"
+            android:contentDescription="@string/share_mood"
+            android:tint="#4FACFE" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
